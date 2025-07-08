@@ -13,4 +13,12 @@ I’ve also delivered projects that integrate Ansible workflows with ServiceNow 
 
 On the Azure side, I manage VM infrastructure and compliance tagging at scale. I’ve supported the migration of LCS-hosted Dynamics 365 F&O environments to UDE hosted in Power Platform Admin Center, including setup, tool installation, Azure VM provisioning, and metadata sync with Visual Studio.
 
-My mission is to reduce manual toil and maintain strict compliance through intelligent automation and reliable infrastructure as code.
+I focus on eliminating manual operational overhead, enforcing compliance through automation, and delivering resilient infrastructure using scalable, code-defined practices.
+
+---
+
+### Leadership Philosophy
+
+I strongly believe I’m equipped to manage and scale engineering teams effectively because I’ve been deeply hands-on with nearly every aspect of what we build and operate — from infrastructure provisioning and system patching to automated remediation, CI/CD, and compliance. I understand not just the "what" but the "how" and "why" behind the engineering process.
+
+My ability to work across cloud platforms, drive complex automation, integrate observability and security into infrastructure, and deliver modular, production-ready tooling enables me to set realistic expectations, provide technical guidance, and mentor engineers based on real experience — not just theory. I lead by example, and I believe in creating systems and teams that scale together.
