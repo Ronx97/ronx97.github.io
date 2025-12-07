@@ -3,7 +3,7 @@ title: Rohan Dutta
 bio: Senior Systems Engineer | AWS | Azure | Ansible | Terraform | Vuln.Mgmt
 
 # twitter summary info
-description: A blog about technology and stuff related
+description: Cloud Solutions Architect (L4) — Multi-Cloud, Automation, Agentic AI Systems
 
 # if it's an external image, update below for true
 # better with square images
@@ -36,7 +36,8 @@ disqus:
 #facebook: myfacebook
 #twitter: mytwitter
 #instagram: myinstagram
-linkedin: rohan-dutta-cloudinfraadmin
+linkedin: https://www.linkedin.com/in/rohan-dutta-05061997/
+github:
 email: rohandutta0609@gmail.com
 
 authors:
@@ -62,7 +63,7 @@ width: normal
 projects: true
 
 # if you don't need "about" or "blog", comment them out below
-about: true
+about: false
 blog: false
 
 # do you want to show the "read time" of the posts?
