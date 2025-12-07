@@ -3,96 +3,90 @@ layout: page
 title: Projects
 ---
 
-These are real-world infrastructure and automation engineering projects I’ve led and delivered at Avalara:
+<section>
+  <h1>Technical Projects & Solutions</h1>
+  
+  <h2>Agentic Workflow Engine for User Access Reviews</h2>
+  <p>
+    Architected and implemented intelligent, scheduled automation workflows for comprehensive User Access Reviews (UAR) covering DFS shares, finance teams, Active Directory permission audits, and cross-platform access validation. Built using <strong>Tines</strong> and <strong>n8n</strong> with dynamic decision trees, event-driven logic, and seamless integration to Active Directory, Slack, and enterprise analytics. Removed 100% of manual intervention while ensuring consistent compliance and audit readiness.
+  </p>
+  <p><strong>Technologies:</strong> Tines, n8n, Active Directory, Slack, ServiceNow, PowerShell</p>
 
----
+  <h2>Multi-Cloud Patch Automation for 500+ Systems</h2>
+  <p>
+    Designed and maintain automated patch governance across 500+ Windows and Linux instances using AWS Systems Manager (SSM), Ansible Automation Platform (AAP), and Azure Update Manager. Implemented hybrid activations, dynamic baselines, pre/post patch health checks, event-driven validation, and automated remediation workflows. Integrated with ServiceNow and Jira for SLA tracking, compliance reporting, and root-cause correlation. Reduced manual maintenance effort by over 60%.
+  </p>
+  <p><strong>Technologies:</strong> AWS SSM, Ansible Automation Platform, Azure Update Manager, ServiceNow, Jira, Slack</p>
 
-### 🛡️ Vulnerability Management at Scale
+  <h2>AI-Driven Security Agent Deployment (CrowdStrike/Tenable)</h2>
+  <p>
+    Built automated workflows for CrowdStrike Falcon Sensor and Tenable Agent deployment, validation, and health monitoring across multi-cloud environments. Implemented daily delta validation of sensor health, SLA-based vulnerability tracking, and automated remediation for agent failures. Integrated with Azure Defender for Cloud continuous export to EventHub for real-time security analytics and dashboarding.
+  </p>
+  <p><strong>Technologies:</strong> CrowdStrike Falcon, Tenable, Azure Defender for Cloud, EventHub, Ansible Automation Platform, AWS SSM</p>
 
-- Designed multi-layered dashboards in **Wiz** and **Tenable**, tracking vulnerabilities by **CVSSv2/v3**, remediation SLA, source (OS vs App), and fix lifecycle.
-- Reduced vulnerability counts by over **80%** across environments, while defining operational exceptions for app-specific risks.
-- Built SLA-centric dashboards (Critical: 30d, High: 60d, Medium: 90d), integrated with asset tags and scan metadata to drive prioritization.
-- Provided technical enablement to remediation teams on dashboard use, automating data flows and actionable insights for real-time remediation.
-- Maintained dashboards as IaC; visualizations were used in security audit reviews and internal compliance reporting.
+  <h2>LCS → UDE Migration Program</h2>
+  <p>
+    Led Avalara's strategic migration from Microsoft Dynamics Lifecycle Services (LCS) to Unified Development Environments (UDE) in Power Platform Admin Center (PPAC). Automated UDE provisioning, Azure backend resource setup, developer VM provisioning with network policies, and cost-optimized environment lifecycle management. Orchestrated metadata sync, schema provisioning, and workspace management across Azure infrastructure, Dataverse, and Dynamics 365 developer tooling.
+  </p>
+  <p><strong>Technologies:</strong> Power Platform Admin Center, Azure, Dynamics 365, Dataverse, Terraform, PowerShell</p>
 
----
+  <h2>Azure Tenant Root Governance (Policy-as-Code + CI/CD)</h2>
+  <p>
+    Built Terraform-based cloud frameworks with Azure tenant-root governance, Policy-as-Code pipelines for security baseline enforcement, and automated resource provisioning/teardown. Implemented GitLab CI/CD pipelines for continuous compliance checks, automated tagging compliance across subscriptions, and RBAC enforcement workflows. Integrated with Azure Policy and custom automation to enforce standards at scale.
+  </p>
+  <p><strong>Technologies:</strong> Terraform, Azure Policy, GitLab CI/CD, Azure Automation, PowerShell, YAML</p>
 
-### 🤖 Infrastructure Automation via Ansible + CI/CD
+  <h2>Cost Forecasting & Licensing Optimization Dashboards</h2>
+  <p>
+    Developed automated workflows for cost forecasting, license spend analysis, and strategic license management across AWS, Azure, Microsoft Power Platform, and AI-driven platforms. Built comprehensive dashboards using Tableau Online, AWS Cost Explorer, Tenable, and Wiz to monitor cost efficiencies, licensing effectiveness, vulnerability metrics, and overall operational health. Provided senior leadership with actionable insights for budget allocation and optimization.
+  </p>
+  <p><strong>Technologies:</strong> Tableau, AWS Cost Explorer, Wiz, Tenable, Python, PowerShell, Azure Cost Management</p>
 
-- Developed modular **Ansible playbooks** for:
-  - .NET Core/Hosting Bundle deployments
-  - SSMS and driver upgrade pipelines (ODBC/OLE DB)
-  - CrowdStrike agent validation (pre/post resource capture)
-  - Vulnerability mitigations (speculative execution, cfn-bootstrap cleanup)
-  - Tenable Agent upgrades and service validation
-- All workflows are pushed via GitLab → AAP → dynamic test inventories in AWS dev environments.
-- Metrics streamed to **Grafana** via **Zabbix**, with health checks automated for service/process validation.
-- Playbooks are reusable, version-controlled, and integrate with role-based inventory access across environments.
-- **ChatGPT in VSCode** is used extensively to troubleshoot playbook logic, optimize loops, parse API data, and design complex conditionals.
+  <h2>AWS Lambda + EventBridge Serverless Scheduling Engine</h2>
+  <p>
+    Built serverless solutions in AWS Lambda for validating patches, managing instance schedules, automating snapshot life cycles, and orchestrating maintenance windows. Integrated with EventBridge for event-driven automation, scheduled start/stop policies, automated security baselines, credential rotation, and multi-cloud tagging compliance. Minimized cost while maximizing operational uptime for core tax automation platforms.
+  </p>
+  <p><strong>Technologies:</strong> AWS Lambda, EventBridge, AWS SSM, Python, Terraform, CloudWatch</p>
 
----
+  <h2>Automated Post-Patch Validation Framework</h2>
+  <p>
+    Established dedicated, cost-efficient development subdomains and environments with automated patch validation cycles. Implemented snapshot lifecycle management and scheduled instance operations using serverless AWS Lambda and EventBridge to ensure patches are tested before production deployment. Integrated pre/post patch health checks, event-driven validation, Slack reporting with CSV artifacts, and SLA compliance scoring.
+  </p>
+  <p><strong>Technologies:</strong> AWS Lambda, EventBridge, AWS SSM, Ansible Automation Platform, Slack, Python</p>
 
-### 🧠 Autonomous Post-Update Validation (Ansible + Slack + SSM)
+  <h2>Ansible AAP Blueprint for Infrastructure & Security Automation</h2>
+  <p>
+    Developed modular, reusable Ansible Automation Platform job templates, playbooks, and hybrid activation workflows. Automated vulnerability remediation including SSM agents, Tenable, CrowdStrike, .NET Bundles, and SQL Server Management Studio updates. Built reusable job templates powering Windows and Linux patching, CrowdStrike validation, and AD group lifecycle management. Integrated patch compliance reporting to ServiceNow/Jira for unified governance.
+  </p>
+  <p><strong>Technologies:</strong> Ansible Automation Platform, Ansible Playbooks, AWS SSM, ServiceNow, Jira, YAML</p>
 
-- Engineered an **automated health verification system** that:
-  - Runs system-wide diagnostics (CPU, memory, service status, agent health)
-  - Triggers via Ansible schedule after scheduled maintenance events
-  - Summarizes host-level results, uploads formatted CSV and message to Slack
-- Ensures clean handoff post-maintenance and helps detect regression scenarios early
+  <h2>SCIM-Based Okta Integration & RBAC Automation</h2>
+  <p>
+    Led SCIM-based Okta integrations for AI and enterprise tools, facilitating automatic user provisioning/de-provisioning, role-based access control (RBAC), usage policies, team-specific budgets, real-time alerts, and weekly automated usage analytics. Ensured seamless, auditable access management across platforms with automated security group creation, modification, and lifecycle management integrated with ServiceNow and Jira for governance and approvals.
+  </p>
+  <p><strong>Technologies:</strong> Okta SCIM, ServiceNow, Jira, PowerShell, REST APIs, Azure AD</p>
 
----
+  <h2>Google Apps + OAuth Scopes for Workflow Automation</h2>
+  <p>
+    Automated the granting and management of Google OAuth2 credentials with custom scopes for Docs, Sheets, and APIs for internal applications. Enabled secure enterprise integration, granular permissions, and real-time, auditable access control workflows. Integrated with n8n agentic workflows for Google App integrations, branching logic, and dynamic decision trees.
+  </p>
+  <p><strong>Technologies:</strong> Google Cloud Platform, OAuth2, Google APIs (Docs, Sheets), n8n, Python</p>
 
-### 🌐 Automated Provisioning + Decommissioning (ServiceNow, Terraform, AAP)
+  <h2>Azure Automation Runbooks + EventHub Integration</h2>
+  <p>
+    Built Azure Automation Runbooks with scheduled execution, Azure Functions for Event Hub ingestion, and continuous export workflows from Azure Defender for Cloud to EventHub. Implemented automated security baselines, credential rotation, and multi-cloud tagging compliance. Integrated with Azure Update Manager for patch orchestration and lifecycle management.
+  </p>
+  <p><strong>Technologies:</strong> Azure Automation, Azure Functions, EventHub, Azure Defender for Cloud, PowerShell, Python</p>
 
-- Built fully automated server provisioning pipeline:
-  - **ServiceNow Catalog → GitLab CI → Terraform Infra Deploy → AAP Bootstrap**
-  - Supports EC2 and Azure VMs, using reusable modules for OS, region, env-specific logic
-- Decommissioning pipeline automates:
-  - NetBox removal, DNS cleanup, AD unbinding, SSM deregistration, EBS tag removal
-- Modular architecture enables multi-region, multi-account deployment and teardown
-- Cost tags and infra metadata are appended for all compute resources by default
+  <h2>Finance & Ops Lifecycle Orchestration</h2>
+  <p>
+    Built scheduled automation workflows that generate and distribute weekly/monthly reports across finance, compliance, and engineering teams. Integrated with Tableau, AWS Cost Explorer, and custom analytics engines to deliver actionable insights via email, Slack, and dashboard updates. Automated AI usage monitoring, budget tracking, and auditing for AI-driven tools, enabling proactive cost management and governance.
+  </p>
+  <p><strong>Technologies:</strong> Tableau, AWS Cost Explorer, Slack, Python, PowerShell, n8n, Tines</p>
 
----
-
-### ☁️ Lambda-Based System Lifecycle Orchestration (PowerOps)
-
-- Designed **event-driven Lambda architecture** to auto-power on and off test systems:
-  - Uses **EventBridge + Python Lambda** to detect 2nd Tuesday (Patch Tuesday)
-  - Systems auto-start, monitored, and shut down exactly 3 days later
-  - Sends Slack Webhook alerts to stakeholders on both power-on and off events
-- Entire stack deployed via **Terraform**, with reusability across accounts
-- This project introduced measurable **cost savings** by removing idle workloads in non-prod
-
----
-
-### 🔒 IAM and Security Group Automation (for Okta + Infra Access)
-
-- Created Ansible-based workflows to:
-  - Provision SGs tied to Okta app roles and infra-access use cases
-  - Define auto-tagging rules and enforce via Git-based IaC
-  - Use domain-specific inventories to scope changes securely
-
----
-
-### 🧩 Cost and Compliance Automation Across Multi-Cloud
-
-- Defined tagging policies across **Azure subscriptions** and AWS accounts
-- Used **Terraform modules** to enforce compliance at scale
-- Maintained **custom patching baselines** and **tag-driven patch groups** in AWS Systems Manager
-- Leveraged Tableau and cloud-native tools for cost analytics and optimization triggers
-
----
-
-### 🔁 UDE Migration for Dynamics 365 F&O
-
-- Lead migration of dev environments from LCS to **Power Platform Admin Center (UDE)**
-- Provisioned Azure VMs, configured metadata sync with Visual Studio
-- Automated UDE registration, developer access, and metadata refresh pipeline using GitLab, Terraform, and VS tooling
-
----
-
-### 🧱 Engineering Best Practices
-
-- Every solution follows **infrastructure-as-code** using **modular, reusable Terraform** that works across multiple cloud accounts.
-- All workflows are integrated with **GitLab CI/CD**, include **AI-assisted logic validation**, and are built to be **self-healing and observable**.
-- Systems are designed for scale, cost visibility, and environment parity between dev, test, and prod.
+  <h2>Jira Epic & Task Automation with CI/CD Integration</h2>
+  <p>
+    Automated Jira Epic/task creation, streamlined Agile board tracking, and approvals for IT/engineering workflows. Created self-service project/resource automations tied to lifecycle, budget, and compliance triggers. Integrated with CI/CD pipelines for automatic ticket creation and status updates. Built workflows for ServiceNow-Integrated infrastructure automation with end-to-end instance deployments, deprovisioning, and standardized security group creation.
+  </p>
+  <p><strong>Technologies:</strong> Jira, ServiceNow, GitLab CI/CD, REST APIs, Python, PowerShell</p>
+</section>
