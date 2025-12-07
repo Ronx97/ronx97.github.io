@@ -1,0 +1,9 @@
+/* Project page card styling */
+.project-page .card-section {
+  max-width: 900px;
+}
+
+.project-page h2 {
+  margin-bottom: 12px;
+}
+
