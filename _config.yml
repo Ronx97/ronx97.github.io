@@ -17,8 +17,8 @@ dark-theme: auto
 # If you want to include your resume, set to true
 # and specify source (external or local).
 resume: true
-resume-external: true
-resume-url: https://docs.google.com/document/d/1YKrSy5BwobbMgEa2ymrS45bpP86ZycWm/edit
+resume-external: false
+resume-url: assets/Rohan_Dutta_CV.doc
 
 url: https://ronx97.github.io
 
@@ -37,7 +37,6 @@ disqus:
 #twitter: mytwitter
 #instagram: myinstagram
 linkedin: rohan-dutta-cloudinfraadmin
-github: Ronx97
 email: rohandutta0609@gmail.com
 
 authors:
